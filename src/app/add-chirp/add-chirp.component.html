@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <input required type="text" placeholder="Enter Name" [(ngModel)]="chirp.created_by"/>
+    <input required maxlength="200" rows="3" placeholder="Say Something" [(ngModel)]="chirp.text"/>
+    <input class="button" type="submit" value="Chirp!" (click)="addChirp()"/>
+  </div>
+  <div class="row">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Promo code">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-secondary">Chirp!</button>
+      </div>
+    </div>
+  </div>
+</div>

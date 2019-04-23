@@ -1,0 +1,14 @@
+<div class="container">
+  <!--*ngIf="chirps.length"-->
+  <app-add-chirp></app-add-chirp>
+  <!-- Content here -->
+  <h3>
+    Chirp Feed
+  </h3>
+
+  <div class="post" *ngFor="let chirp of chirps">
+    <p>{{chirp.text}}</p>
+    <small>Posted by @{{chirp.created_by}}</small>
+    <small class="pull-right">{{chirp.created_at | date:"h:mma 'on' MMM d, y"}}</small>
+  </div>
+</div>
